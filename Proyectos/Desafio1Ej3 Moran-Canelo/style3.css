@@ -1,0 +1,44 @@
+.artform {
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.headerform {
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.h {
+    border-color: black;
+    border-style: dashed;
+    border-width: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.paragraph {
+    border-color: gray;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.paragraph2 {
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footerform {
+    border-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.sectioncolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 5px;
+    border-radius: 5px;
+}
+.headform {
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    height: 50px;
+    width: 500px;
+}
+
+.navform {
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+}
+
+.navform2 {
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 500px;
+    width: 50px;
+}
+
+.sectionform {
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 260px;
+    align-self: flex-start;
+}
+
+.asideform {
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 500;
+    width: 50px;
+}
+
+.footerform {
+    border-color: blueviolet;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+}
+
+.headform2 {
+    border-color: aqua;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+.artform {
+    border-color: brown;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+.footform {
+    border-color: cadetblue;
+    border-style: dashed;
+    border-width: 3px;
+}
