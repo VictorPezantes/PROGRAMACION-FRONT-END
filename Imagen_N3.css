@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+
+}
+
+article{
+    background-color: whitesmoke
+}
+
+header{
+    background-color: lightblue
+}
+
+h1{
+    background-color: skyblue;
+}
+
+p{
+    background-color: lightgreen;
+    height: 4rem;
+}
+
+footer{
+    background-color: lightgray;
+}
+
+article, header, h1, p, footer{
+    border: 2px solid black;
+    padding: 20px;
+}

@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+header{
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 26px;
+    height: 4rem;
+}
+
+article {
+    border: 2px solid black;
+    background-color: lightgoldenrodyellow;
+    margin-top: 1rem;
+    margin-left: 19rem;
+    padding: 26px;
+    height: 9rem;
+}
+
+nav {
+    border: 2px solid black;
+    background-color: lightpink;
+    padding: 14px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 15rem;
+    position: absolute;
+    height: 24rem;
+  }
+
+footer {
+    border: 2px solid black;
+    background-color: lightgrey;
+    margin-top: 1rem;
+    padding: 26px;
+    height: 3rem;
+}
