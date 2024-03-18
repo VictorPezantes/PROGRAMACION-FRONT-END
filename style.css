@@ -1,43 +1,47 @@
-body{
-    text-align: center;
-}
-
+/*Esto se aplica a todos los elementos que esten contenidos despues del <body>*/
 body > *{
-    border-style: solid;
-    border-color: black;
-    margin: 1%;
-    text-align: left;
+    border-style: solid; /*Añade una linea al borde del elemento*/
+    border-color: black; /*Añade el color de la linea*/
+    margin: 1%; /*Añade un margen del 1% a los costados de los elementos*/
+    box-shadow: 7px 4px #888888; /*Añade una sombra a la caja*/
+
 }
 
 header{
-    width: 90%;
-    position: sticky;
+    width: 90%; /*configura el ancho del <header> al 90% del ancho de la pagina*/
 }
 
 p{
-    position: relative;
+    /*Position permite posicionar el elemento relativo a donde aparece en el 
+    documento, con esto podemos posicionarlo facilmente al borde del contenedor*/
+    position: relative; 
+
+    /*Bottom y left permite mover en px el elemento para posicionarlo*/
     bottom: 27px;
     left: 20px;
+
+    /*Color de fondo de el elemento en blanco, para hacer el estilo similar a la 
+    tarea y que no se vea la franja negra del contenedor*/
     background-color: white;
+
+    /*Permite configurar como se va a extender visualmente el elemento, en relacion 
+    a su contenido y permite darle valores de ancho y largo*/
     display: inline-block;
 }
 
 nav{
-    width: 27.5%;
-    /*position: sticky;
-    display: inline-block;*/
-    height: 70vh;
+    /*Configura el ancho del elemento en realcion al % del ancho de la pantalla*/
+    width: 27.5%; 
+
+    /*Configura el largo del elemento en realcion al % del largo de la pantalla*/
+    height: 70vh; 
+
+    /*Propiedad que permite posicionar donde va el elemento, en este caso izquierda*/
     float: left;
-    top: 0px;
-    position: sticky;
-    
-   
 }
+
 article{
-    /*display: inline-block;
-    position: sticky;*/
-    height: 33vh;
-    position: sticky;
+    height: 33vh; 
     float:left;
     width: 60%
 }   
@@ -45,7 +49,6 @@ article{
 footer{
     width: 90%;
     height: 10vh;
-    position: relative;
     display: inline-block;
-    float: left;
 }
+
