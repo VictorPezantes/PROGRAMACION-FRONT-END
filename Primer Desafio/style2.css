@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+}
+
+body > *{
+    border-style: solid;
+    border-color: black;
+    margin: 1%;
+    text-align: left;
+    height: 8vh;
+}
+
+
+
+
+.nav2{
+    width: 27.5%;
+    /*position: sticky;
+    display: inline-block;*/
+    height: 70vh;
+    float: left;
+    top: 0px;
+    position: relative;
+    
+}  
+
+
+aside{
+    width: 23%;
+    /*position: sticky;
+    display: inline-block;*/
+    height: 70vh;
+    float: right    ;
+    top: 0px;
+    position: sticky;
+    
+}    
+body > section > header{
+    margin-top: 0px;
+    top: 0px;
+    float: top;
+}
+
+
+
+section{
+    /*display: inline-block;
+    position: sticky;*/
+    height: 33vh;
+    position: sticky;
+    float:left;
+    width: 40%;
+    padding: 0px auto;
+} 
+
+
+body > section > header, article, footer  {
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+    width: 90%;
+    height: 5vh;
+    display: block;
+    position: static;
+    float: center;
+    margin-top: 2%;
+    margin-left: 2vh;
+}
+article{
+    height: 11vh;
+}
+
+p{
+    position: relative;
+    bottom: 11px;
+    left: 20px;
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+}
+
+
+.foot{
+    display: inline-block;
+    width: 97.5%;
+}
