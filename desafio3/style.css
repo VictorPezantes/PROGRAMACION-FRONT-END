@@ -109,7 +109,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/hero.jpg");
+    ,url("categoria/imagenes/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -156,7 +156,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/shampoo/shampoo.jpg");
+    ,url("categoria/imagenes/shampoo/shampoo.jpg");
 }
 
 .producto:nth-child(2) {
@@ -165,7 +165,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/termoprotector/termoprotector.jpg");
+    ,url("categoria/imagenes/termoprotector/termoprotector.jpg");
 }
 
 .producto:nth-child(3) {
@@ -174,7 +174,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/acondicionador/acondicionador.jpg");
+    ,url("categoria/imagenes/acondicionador/acondicionador.jpg");
 }
 
 .contacto {
@@ -187,7 +187,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/contacto.jpg");
+    ,url("categoria/imagenes/contacto.jpg");
     height: 50vh;
     background-size: cover;
     background-position: center center;
