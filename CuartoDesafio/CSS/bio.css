@@ -1,0 +1,62 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#banner {
+    background-image: url('dental-banner.jpg');
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+}
+
+#doctor-info {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#doctor-info h2 {
+    color: #333;
+    text-align: center;
+}
+
+#doctor-info p {
+    line-height: 1.6;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
