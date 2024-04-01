@@ -1,0 +1,34 @@
+{
+    "The_producto": {
+        "Descripcion": "Producto",
+        "SKU": "SKU123",
+        "Precio_Compra": 100,
+        "Stock": 50,
+        "Precio_Neto": 120,
+        "Proveedor": "Proveedor",
+        "Cantidad": 10,
+        "IVA": 0.19,
+        "Estado": "activo",
+        "filtros": [{
+            "peso": "1kg",
+            "medida": "10x10x10",
+            "color": "Rojo",
+            "genero": "Unisex",
+            "compatibilidad": "Universal"
+        },
+        {
+            "peso": "1kg",
+            "medida": "20x30x40",
+            "color": "Rojo",
+            "genero": "Unisex",
+            "compatibilidad": "Universal"
+        },
+        {
+            "peso": "5kg",
+            "medida": "50x50x50",
+            "color": "Azul",
+            "genero": "Unisex",
+            "compatibilidad": "Universal"
+        }]
+    }
+}

@@ -5,30 +5,30 @@ body {
     padding: 0;
 }
 
-#header {
+.header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-#menu ul {
+.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#menu ul li {
+.menu ul li {
     display: inline;
     margin-right: 20px;
 }
 
-#menu ul li a {
+.menu ul li a {
     color: #333;
     text-decoration: none;
 }
 
-#banner {
+.banner {
     background-image: url('dental-banner.jpg');
     background-size: cover;
     height: 300px;
@@ -37,21 +37,21 @@ body {
     padding-top: 100px;
 }
 
-#contact-info {
+.contact-info {
     background-color: #fff;
     padding: 50px;
 }
 
-#contact-info h2 {
+.contact-info h2 {
     color: #333;
     text-align: center;
 }
 
-#contact-info p {
+.contact-info p {
     line-height: 1.6;
 }
 
-#footer {
+.footer {
     background-color: #333;
     color: #fff;
     text-align: center;
