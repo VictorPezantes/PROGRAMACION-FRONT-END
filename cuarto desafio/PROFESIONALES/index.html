@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio - Clínica Dental</title>
+    <style>
+        body {
+            background-color: #ffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contenedor-imagenes {
+            display: flex;
+            /* Utilizamos flexbox para alinear horizontalmente */
+        }
+
+        .contenedor-imagenes img {
+            margin: 0 10px;
+            /* Margen entre las imágenes */
+        }
+
+        .contenedor-centrado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Clínica Dental</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="servicios.html">Servicios Generales</a></li>
+                <li><a href="profesionales.html">Profesionales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h2>Bienvenido a nuestra clínica dental</h2>
+        <p>Somos expertos en cuidado dental. ¡Contáctenos para una cita hoy mismo!</p>
+
+        <article class="contenedor-centrado">
+            <div class="contenedor-imagenes">
+                <img src="imagen1.jpeg" alt="Imagen 1">
+                <img src="imagen2.jpeg" alt="Imagen 2">
+                <img src="imagen3.jpeg" alt="Imagen 3">
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Derechos reservados &copy; 2024 Clínica Dental</p>
+    </footer>
+</body>
+
+</html>

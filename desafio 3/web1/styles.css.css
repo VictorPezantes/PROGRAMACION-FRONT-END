@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+}
+
+header, footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0 5px;
+    background: var(--accent-color);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: var(--hover-color);
+}
+
+main, aside, section, form {
+    padding: 20px;
+    background: var(--text-color);
+    border-radius: 5px;
+}
+
+main {
+    background: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="email"], textarea, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: var(--accent-color);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+}
