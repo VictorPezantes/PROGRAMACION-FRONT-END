@@ -28,7 +28,7 @@ body {
     text-decoration: none;
 }
 
-#services {
+.services {
     background-color: #fff;
     padding: 50px;
 }
@@ -39,7 +39,26 @@ body {
 }
 
 .doctor-services {
-    margin-bottom: 50px;
+    width: 20%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.doctor-services>img{
+    object-fit: cover;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0
+}
+
+.doctor-services:hover{
+    box-shadow:2px 2px 1px 1px rgba(0, 0, 0, 0.5)
 }
 
 .doctor-services h3 {
@@ -54,6 +73,7 @@ body {
 .doctor-services li {
     margin-bottom: 10px;
 }
+
 
 #footer {
     background-color: #333;
@@ -163,4 +183,126 @@ main{
 .profesionales-nombre{
     font-size: 20px;
     color: white;
+}
+
+.servicios-doctores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 420px;
+    margin-top: 10px;
+    margin-right: 10px;
+    gap: 5px;
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+}
+
+.servicios-doctores>img{
+    width: 100%;
+    height:360px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0
+}
+
+.section-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.boton-ir{
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #c5c0c0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.nombre-servicios{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.main-doctor-services{
+    width: 100%;
+    min-height: 1200px;
+}
+
+.total-services{
+    width: 100%;
+    min-height: 1200px;
+}
+
+.services-total{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.servicios-odonto{
+    width: 100%;
+    text-align: center;
+}
+
+.doctor-services ul{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.doctor-services ul li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*{
+    width: 100%;
+    border: 1px solid blue;
+    padding: 2px;
+    background-color: #333;
+}*/
+.doctor-services .opciones{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #333;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.doctor-services .opciones:hover{
+    background-color: #c5c0c0;
+    color: #333;
 }
