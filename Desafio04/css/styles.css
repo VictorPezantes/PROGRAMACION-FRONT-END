@@ -58,7 +58,7 @@ body {
     text-align: center;
 }
 
-#menu ul {
+/* #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -72,9 +72,9 @@ body {
 #menu ul li a {
     color: #333;
     text-decoration: none;
-}
+} */
 
-#services {
+/* #services {
     background-color: #fff;
     padding: 50px;
 }
@@ -82,7 +82,7 @@ body {
 #services h2 {
     color: #333;
     text-align: center;
-}
+} */
 
 .doctor-services {
     margin-bottom: 50px;
@@ -118,32 +118,32 @@ body {
     text-align: center;
 }
 
-.productos {
+.grilla {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.producto {
+.imagen {
     background-color: whitesmoke;
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
-    width: calc(33.33% - 40px);
-    margin-bottom: 30px;
+    width: calc(25% - 40px);
+    margin-bottom: 40px;
 
 }
 
-.producto img {
-    width: 100%;
+.imagen img {
+    width: 90%;
     border-radius: 5px;
 }
 
-.producto h3 {
+.imagen h3 {
     margin-top: 0;
 }
 
-.producto p {
+.imagen p {
     margin-bottom: 10px;
 }
 
@@ -170,7 +170,7 @@ body {
     line-height: 1.6;
 }
 
-#contact-info {
+/* #contact-info {
     background-color: #fff;
     padding: 50px;
 }
@@ -182,7 +182,7 @@ body {
 
 #contact-info p {
     line-height: 1.6;
-}
+} */
 
 .doctor-services {
     margin-bottom: 50px;
