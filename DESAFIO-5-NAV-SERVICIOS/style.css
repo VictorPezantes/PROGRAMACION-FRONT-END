@@ -1,0 +1,270 @@
+/* INDEX */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    
+}
+.menu {
+    position: sticky;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+}
+
+
+main {
+    padding: 20px; 
+}
+
+h2 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.contenedor figure {
+    display: flex;
+}
+
+.contenedor figure img {
+    margin: 10px;
+}
+.contenedor {
+display: flex;
+justify-content: center; 
+align-items: center; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* SERVICIOS GENERALES */
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+}
+
+.doctor-services {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: center;
+    margin: 10px;
+    width: 500px;
+    gap: 20px;
+
+}
+
+
+.doctor-services a:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.doctor-services h3 {
+    color: #333;
+}
+
+.doctor-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.doctor-services li {
+    margin-bottom: 10px;
+}
+
+
+/* CONTACTO GENERAL */
+
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+/* PROFESIONALES */
+
+
+/* Carlos */
+
+.doctor-info-personal {
+    background-color: #fff;
+    padding: 50px;
+    margin: 20px;
+}
+
+.doctor-info-personal h2 {
+    color: #333;
+    text-align: center;
+}
+
+.doctor-info-pesonal p {
+    line-height: 1.6;
+}
+
+
+.banner {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.contact-info h2 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+.banner h2 {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.doctor-info {
+    padding: 30px;
+    margin: 10px;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 45vh;
+    width: 35vh;
+}
+
+
+/* Servicios */
+
+
+.services .doctor-services a img {
+    margin-bottom: 50px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.services img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover; 
+    border: 1px #bababa solid; 
+}
+
+.servicios img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;  
+    margin-top: 60px;
+    border: 1px #bababa solid;
+    
+}
+
+.parent {
+    display: flex;
+}
+
+.servicios {
+    flex: 3;
+    border: 1px #bababa solid;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px #bababa solid;
+    padding: 40px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.aside img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+
+}
+
+.aside a {
+    margin: 10px;
+    padding: 10px;
+}
+
+.aside a:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    text-decoration: none;
+}
+
+.servicios ol{
+    text-align: start;
+}
+
+.servicios ol p {
+    text-align: start;
+}
+
