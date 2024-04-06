@@ -41,7 +41,7 @@ body {
 display: flex;
 justify-content: center; 
 align-items: center; 
-height: 100vh; 
+height: 50vh; 
 }
 
 body {
@@ -58,33 +58,8 @@ body {
     text-align: center;
 }
 
-/* #menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#menu ul li a {
-    color: #333;
-    text-decoration: none;
-} */
-
-/* #services {
-    background-color: #fff;
-    padding: 50px;
-}
-
-#services h2 {
-    color: #333;
-    text-align: center;
-} */
-
 .doctor-services {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -102,13 +77,13 @@ body {
 }
 
 .footer {
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 0px;
     position: fixed;
-    bottom: 0;
+    bottom: 00;
     width: 100%;
 }
 
@@ -130,7 +105,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     width: calc(25% - 40px);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
 }
 
@@ -150,12 +125,25 @@ body {
 .banner {
     background-image: url('dental-banner.jpg');
     background-size: cover;
-    height: 300px;
+    height: 200px;
     text-align: center;
     color: black;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+.info {
+    background-color: #fff;
+    padding: 50px;
 }
 
+.info h2 {
+    color: #333;
+    text-align: center;
+}
+
+.info p {
+    line-height: 1.6;
+    text-align: center;
+}
 .doctor-info {
     background-color: #fff;
     padding: 50px;
@@ -170,6 +158,19 @@ body {
     line-height: 1.6;
 }
 
+.servicio-info {
+    background-color: #fff;
+    padding: 100px;
+}
+
+.servicio-info h2 {
+    color: #333;
+    text-align: center;
+}
+
+.servicio-info p {
+    line-height: 1.6;
+}
 /* #contact-info {
     background-color: #fff;
     padding: 50px;
