@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Principal</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script>
+        function greetUser() {
+        var userName = prompt("Por favor, ingresa tu nombre:");
+        alert("¡Hola, " + userName + "! Bienvenido a nuestro sitio web.");
+        }
+        </script>
+    </head>
+    <header>
+        <h1>Bienvenido a Nuestra Estética</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>    
+    <body>
+        <article>
+            <p>Somos una estética dedicada a hacer que te sientas y te veas mejor.</p>
+            <button onclick="greetUser()">Saludar</button>
+        </article>   
+    </body>
+    <footer><p>Derechos reservados &copy; 2024</p></footer>
+</html>
