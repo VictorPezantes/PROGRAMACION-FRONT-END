@@ -282,12 +282,6 @@ main{
     
 }
 
-/*{
-    width: 100%;
-    border: 1px solid blue;
-    padding: 2px;
-    background-color: #333;
-}*/
 .doctor-services .opciones{
     text-decoration: none;
     width: 100%;
@@ -305,4 +299,26 @@ main{
 .doctor-services .opciones:hover{
     background-color: #c5c0c0;
     color: #333;
+}
+
+.main-info{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-individual{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.aside-info{
+    width: 30% ;
+    height: 200px;
+    border: 1px solid green;
 }
