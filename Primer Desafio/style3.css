@@ -1,0 +1,26 @@
+.contenedor{
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+    min-height: 10vh;
+    position: relative;
+    margin: 1%;
+    
+}
+.descriptor{
+    background-color: white;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+    bottom: 1.9vh;
+    left: 1vh;
+}
+
+p > p{
+    display: none;
+}
+
+#texto{
+    bottom: 14vh;
+    left: 4vh;
+}
