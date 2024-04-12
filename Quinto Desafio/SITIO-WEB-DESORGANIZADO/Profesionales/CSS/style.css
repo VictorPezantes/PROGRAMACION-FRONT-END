@@ -1,0 +1,202 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    /* Utilizamos flexbox para alinear horizontalmente */
+}
+
+.contenedor-imagenes img {
+    margin: 0 10px;
+    /* Margen entre las imágenes */
+}
+.contenedor-centrado {
+display: flex;
+justify-content: center; 
+align-items: center; 
+height: 100vh; 
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#services {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#services h2 {
+    color: #333;
+    text-align: center;
+}
+
+.doctor-services {
+    margin-bottom: 50px;
+}
+
+.doctor-services h3 {
+    color: #333;
+}
+
+.doctor-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.doctor-services li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.33% - 40px);
+    margin-bottom: 30px;
+
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin-top: 0;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.banner {
+    background-image: url('dental-banner.jpg');
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: black;
+    padding-top: 100px;
+}
+
+.doctor-info {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.doctor-info h2 {
+    color: #333;
+    text-align: center;
+}
+
+.doctor-info p {
+    line-height: 1.6;
+}
+
+#contact-info {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#contact-info h2 {
+    color: #333;
+    text-align: center;
+}
+
+#contact-info p {
+    line-height: 1.6;
+}
+
+.doctor-services {
+    margin-bottom: 50px;
+}
+
+.doctor-services h3 {
+    color: #333;
+}
+
+.doctor-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.doctor-services li {
+    margin-bottom: 10px;
+}
