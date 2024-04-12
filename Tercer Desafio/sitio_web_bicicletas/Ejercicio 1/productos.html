@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda de Bicicletas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="productos">
+            <article class="producto">
+                <img src="img/bicicleta1.jpg" alt="Bicicleta 1">
+                <h3>Bicicleta de Montaña</h3>
+                <p class="descripcion">Diseñada para terrenos accidentados y senderos fuera de carretera, la bicicleta de montaña tiene una estructura robusta y neumáticos con agarre profundo.</p>
+                <p class="precio">$250.000</p>
+                <button onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/bicicleta2.jpg" alt="Bicicleta 2">
+                <h3>Bicicleta de carretera</h3>
+                <p class="descripcion">Diseñada para la velocidad y la eficiencia en carreteras pavimentadas, la bicicleta de carretera tiene un cuadro ligero y aerodinámico.</p>
+                <p class="precio">$7.499.990</p>
+                <button onclick="agregarAlCarrito(2)">Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/bicicleta3.jpg" alt="Bicicleta 3">
+                <h3>Bicicleta eléctrica</h3>
+                <p class="descripcion">Bicicleta que incorpora un motor eléctrico para proporcionar asistencia al pedaleo. Estas bicicletas permiten al ciclista viajar con menos esfuerzo, especialmente en terrenos difíciles o largas distancias.</p>
+                <p class="precio">$2.490.000</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/bicicleta4.jpg" alt="Bicicleta 4">
+                <h3>Bicicleta de paseo</h3>
+                <p class="descripcion">Conocida por su estilo retro y su comodidad, la bicicleta de paseo tiene un cuadro grande, asiento amplio y manillar alto.</p>
+                <p class="precio">$169.990</p>
+                <button onclick="agregarAlCarrito(4)">Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/bicicleta5.jpg" alt="Bicicleta 5">
+                <h3>Bicicleta plegable</h3>
+                <p class="descripcion">Diseñada para la portabilidad y la conveniencia, la bicicleta plegable se puede doblar fácilmente para facilitar su transporte y almacenamiento en espacios reducidos, como apartamentos pequeños o espacios de trabajo.</p>
+                <p class="precio">$190.000</p>
+                <button onclick="agregarAlCarrito(5)">Agregar al Carrito</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Bicicletas</p>
+    </footer>
+
+</body>
+</html>
