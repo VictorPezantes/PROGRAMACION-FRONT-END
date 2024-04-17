@@ -85,7 +85,7 @@ main {
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
     )
-    , url("img-principal-gato.jpeg");
+    , url("imagenes/img-principal-gato.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
