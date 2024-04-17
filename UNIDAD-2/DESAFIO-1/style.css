@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: rgb(156, 164, 169);
+}
+
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: 12%;
+    background-color: white;
+}
+
+.header-principal h1 {
+    margin-left: 150px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.article-llamanos {
+    position: relative;
+    background-color: rgb(156, 164, 169);
+    width: 100%;
+    padding: 10px;
+    height: 3%;
+
+}
+
+.article-llamanos p {
+    color: white;
+    font-size: small;
+    position: absolute;
+    right: 10%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.icono-menu {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: rgb(43, 104, 138);
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.cruz {
+    color: rgb(43, 104, 138);
+    font-weight: bold;
+}
+
+main {
+    height: 80%;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+    , url("img-principal-gato.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.section-card {
+    padding: 100px;
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.article-card h2 {
+    font-size: 40px;
+}
+
+.article-card p {
+    font-size: 20px;
+}
+
+.article-card button {
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.711);
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.article-card button:hover {
+    background-color: rgb(43, 104, 138);
+    color: white;
+    cursor: pointer;
+}
+
+.span-veterinaria {
+    font-size: medium;
+    color: rgb(156, 164, 169);
+}
+
+.footer-principal {
+    height: 5%;
+}
+
+.footer-principal p{
+    background-color: rgb(156, 164, 169);
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding-right: 10%;
+}
+
+::selection {
+    background-color: rgb(209, 209, 209);
+}
+
+@media (max-width: 1055px){
+    .header-principal h1 {
+        font-size: 20px;
+        gap: 20px;
+        margin-left: 40px;
+        margin-top: 30px;
+        
+    }
+
+    .menu ul li a{
+        font-size: 13px;
+        
+    }
+
+    .menu {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+    .section-card {
+        padding: 40px;
+        width: 50%;
+        padding-right: 0;
+    }
+    
+    .article-card {
+        gap: 30px;
+        width: 70%;
+    } 
+}
+
+@media (max-width: 730px){
+    .header-principal h1 {
+        width: 50%;
+        align-content: center;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 0;
+        width: 20%;
+        margin-right: 90px;
+    }
+
+    .icono-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    .article-card h2 {
+        font-size: 30px;
+    }
+    
+    .article-card p {
+        font-size: 15px;
+    }
+    
+    .article-card button {
+        font-size: 10px;
+        width: 120px;
+        height: 22px;
+    }
+}
