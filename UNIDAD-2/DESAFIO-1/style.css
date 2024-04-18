@@ -74,8 +74,7 @@ body {
 }
 
 .cruz {
-    color: rgb(43, 104, 138);
-    font-weight: bold;
+    color: red;
 }
 
 main {
