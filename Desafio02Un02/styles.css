@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    padding: 20px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    border: 4px dotted green;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.elemento1 {
+    border: 2px dashed black; 
+    background-color: gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
