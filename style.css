@@ -1,4 +1,22 @@
 /* Estilos para el template HTML5 */
+/*todooo*/
+*{
+    font-family: Arial, sans-serif;
+}
+
+.text-si{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+span + span {
+    font-size: 15px;
+    color: #fff;
+}
+h1,h2,h3 {
+    font-size: 15px;
+    color: #fff;
+}
 
 body {
     font-family: Arial, sans-serif;

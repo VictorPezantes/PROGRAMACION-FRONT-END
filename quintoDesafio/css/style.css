@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg-image {
+    background-image: url("resources/download.png");
+    filter: blur(8px); /* Agrega el efecto de desenfoque */
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-text {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
