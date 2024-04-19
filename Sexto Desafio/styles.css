@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+    font-family: serif; /*Times New Roman*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Productos destacados */
+.destacados {
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    /* Box Model: Padding y Borde */
+}
+
+.producto img {
+    max-width: 100%;
+    /* Box Model: Contenido */
+}
+
+/* Pseudo Clases */
+.producto:hover {
+    background-color: red;
+    /* Cambia el fondo cuando el cursor está sobre el elemento */
+}
+
+/* Pseudo Elementos */
+.producto::after {
+    content: "🚲"; /* Asi se escribe en codigo el emoji \1F6B2 */
+    font-size: 50px; /* Ajusta el tamaño */
+    /* Agrega un emoji despues del contenido del elemento */
+}
+
+/* Pie de página */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+    position: sticky; /* Hace que el footer se mantenga estatico*/
+    min-height: 100%;
+}
