@@ -1,4 +1,33 @@
 /* Estilos generales */
+article {
+    border: 1px solid darkblue;
+    border-radius: 6px;
+    border-style: dotted;
+    margin: 10px 10px 10px 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+button{
+
+        border: 1px solid red;
+        border-radius: 6px;
+        border-style: dotted;
+        background-color: red;
+        color:#f9f9f9;
+        margin: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+    }
+h6 {
+    color: black;
+    margin-top: 0px;
+}
+section{
+    border: 2px solid green;
+    margin: 100px 30px 25px 20px;
+    padding: 10px 30px 25px 20px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
