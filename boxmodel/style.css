@@ -24,27 +24,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 main {
     display: flex;
     flex-direction: row;
@@ -86,25 +65,23 @@ footer {
     width: 100%;
 }
 
-.header {
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
 }
 
-.menu ul {
+nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-.menu ul li {
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.menu ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
