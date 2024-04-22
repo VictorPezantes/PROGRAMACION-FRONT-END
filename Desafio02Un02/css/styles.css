@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenes/background/fondo.avif);
+    background-size: cover;
+}
+
+.texto {
+    position: sticky;
+    background-color: transparent;
+    display:block;
+    color: yellow;
+    margin-right: 15%;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    text-align: right;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+    color: white;
+}
+
+a h3 {
+    color: white;
+}
+
+a h3:hover {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+}
+.articulo {
+    background-color: transparent;
+    border: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.articulo img {
+    justify-content: center;
+    width: 40%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.articulo h2{
+    margin: 0px;
+    padding: 10px;
+
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.producto {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 25px;
+    width: calc(250px - 40px);
+
+}
+
+.producto img {
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.producto h3 {
+    margin-top: 0;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.producto:hover {
+    background-color: grey;
+}
+
+section {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: blue;
+}
+
+
+
