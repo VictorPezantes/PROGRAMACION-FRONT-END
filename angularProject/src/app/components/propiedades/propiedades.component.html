@@ -1,0 +1,31 @@
+<p>propiedades works!</p>
+<section [class.active]="isActive" (click)="toggleActive()">
+
+<article>
+<p>elemento activo</p>
+
+<a href={{enlace}}>monito</a>
+</article>
+
+</section>
+
+
+<button (click)="decirAdios()">CickMe</button>
+
+<button (click)="setZero()">CickMe</button>
+<input type="number" [(ngModel)]="lado" />
+
+
+
+<section>
+    <article *ngIf="isAdmin; else usuarioRegular">
+<h2>Bienvenido Administrador</h2>
+    <p>Tienes acceso a todas las funcionalidades</p> 
+</article>
+<br>
+<ng-template #usuarioRegular>
+    <h2>Bienvenido Usuario regular</h2>
+        <p>Tienes acceso limitado</p> 
+    </ng-template>
+</section>
+

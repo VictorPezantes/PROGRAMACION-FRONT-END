@@ -1,9 +1,9 @@
 [
     {
-      "ascendente": "Raichu",
-      "desendiente": null,
-      "nombre": "Pikachu",
-      "tipo": "Eletrico"
+      "nombreProducto": "All in One",
+      "marca": "HP",
+      "precio": 300000,
+      "stock": 10
     },
     {
       "ascendente": null,

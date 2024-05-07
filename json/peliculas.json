@@ -1,0 +1,12 @@
+{
+"titulo": "The Avengers",
+"director": "Joss Whedon",
+"anio": 2012,
+"genero": ["Ciencia Ficcion","Cine de Superheroes"],
+"sinopsis": "El dios asgardiano exiliado Loki se encuentra con El Otro, un líder de una raza extraterrestre conocida como los Chitauri. Llega a un trato con ellos; a cambio de recuperar el Teseracto, una fuente de poderosa energía de potencial desconocido, el Otro le promete a Loki un ejército con el que pueda subyugar a la Tierra.",
+"actores": ["Robert Downey Jr","Chris Evans","Chris Hemsworth","Mark Ruffalo","Scarlett Johansson"],
+"duracion": "143 minutos",
+"rating": "8.0/10",
+"estudio": "Marvel Studios",
+"poster": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8D63BFCB55921C27B39DB09FFD775F1C1EDE00FC4D5611AC492CA33B7651FDF2/scale?width=1440&aspectRatio=1.78&format=jpeg"
+}

@@ -1,0 +1,25 @@
+.seccFoto {
+    width: 100%; 
+    align-items: center; 
+    text-align: center;
+}
+
+.fotoSec {
+    align-items: center; 
+    width: 20%;
+}
+
+
+.active {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section{
+background-color: green;
+color: black;
+padding: 10px;
+cursor: pointer;
+}

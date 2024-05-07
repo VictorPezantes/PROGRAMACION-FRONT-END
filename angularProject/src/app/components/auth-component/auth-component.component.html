@@ -1,0 +1,43 @@
+
+<form >
+<section>
+<article *ngIf="isLoguin; else usuarioRegular">
+
+    <h2 class="label">Bienvenido Usuario!!</h2>
+    <h3 class="label">Hola! {{usuario}}</h3>
+    <h3 class="label">Tu contraseña es: {{contrasena}}</h3>
+    <button class="logOut"
+    (click)="logout()">
+Cerrar Sesion
+</button>
+</article>
+
+<br>
+
+<ng-template #usuarioRegular>
+    <h2 class="label">Debes iniciar Sesion</h2>
+<label for="first">
+    Usuario:
+</label>
+<input type="text"
+     id="usuario"
+     name="usuario"
+     placeholder="Ingresa el usuario" required [(ngModel)]="usuario">
+
+<label for="password">
+    Contraseña:
+</label>
+<input type="password"
+     id="password"
+     name="password"
+     placeholder="ingresa la contraseña" required [(ngModel)]="contrasena">
+
+<div class="wrap">
+  <button class="login" (click)="login()">
+      Iniciar Sesion
+  </button>
+</div>
+<h3 class="label" style="color: red;">{{error}}</h3>
+    </ng-template>
+</section>
+</form>

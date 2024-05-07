@@ -1,0 +1,63 @@
+{
+    "proyectos": [
+        {
+            "nombre": "Crear Login"
+        },
+        {
+            "nombre": "Conectar pasarela"
+          
+        },
+        {
+            "nombre": "Crear Web Service"
+         
+        },
+        {
+            "nombre": "Disenio UI/UX"
+           
+        }
+    ],
+    "empleados": [
+        {
+            "nombre": "Juan Perez",
+            "correo": "jperez@gmail.com",
+            "numerotelefono": "56954638796",
+            "contrasenia": "colocolo91",
+            "direccion": "Las Trinitarias 345, Santiago"
+        },
+        {
+            "nombre": "Hector Montesino",
+            "correo": "hmontesino@gmail.com",
+            "numerotelefono": "56986956327",
+            "contrasenia": "arbocampeon",
+            "direccion": "Americo Vespucio Norte 945, Santiago"
+        },
+        {
+            "nombre": "Roberto Manfinfla",
+            "correo": "rmanfinfla@gmail.com",
+            "numerotelefono": "56976532894",
+            "contrasenia": "vidallomasgrande",
+            "direccion": "Francisco Bilbao 1637, Santiago"
+        },
+        {
+            "nombre": "Angel Munoz",
+            "correo": "elnino@gmail.com",
+            "numerotelefono": "56956748593",
+            "contrasenia": "libertadores",
+            "direccion": "Irarrazaval 3569, Santiago"
+        }
+    ],
+    "tareas": [
+        {
+            "nombreempleado": "Juan Perez",
+            "tarea": "Crear Login"
+        },
+        {
+            "nombreempleado": "Hector Montesino",
+            "tarea": "Conectar pasarela"
+        },
+        {
+            "nombreempleado": "Roberto Manfinfla",
+            "tarea": "Disenio UI/UX"
+        }
+    ]
+}
