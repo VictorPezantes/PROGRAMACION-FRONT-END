@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.showcase{
+    background-image: url("./imagenes/thundercats-leono-luce-salvaje-en-este-cosplay-3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+
+
+.page-down{
+    background-color: #1827c9;;
+    height: 150px;
+
+} 
+
+.section-footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.showcase-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 30%;
+    bottom: 50%;
+
+}
+
+.article-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.article-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.ask-question{
+    background-color:#000 ;
+    height: 500px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.estilo-color-verde{
+    color: #46c224
+}
+
+.button-question{
+    width: 500px;
+    height: 35px;
+    background-color: #222 ;
+    color: #999;
+    text-align: start;
+
+}
+
+.espacio{
+    margin-bottom: 10px;
+}
+
+.section-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.try-now{
+    height: 30px;
+    width: 100px;
+    background-color: #1827c9 ;
+    color: white;
+    border-radius: 5px;
+}
+
+.search-txt{
+    height: 30px;
+    width: 400px;
+
+}
+
+.showcase-top{
+    color: white;
+    background-color:#1827c9 ;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in{
+    background-color:#1827c9  ;
+    width: 80px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top:10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.size{
+    font-size: 40px;
+}
