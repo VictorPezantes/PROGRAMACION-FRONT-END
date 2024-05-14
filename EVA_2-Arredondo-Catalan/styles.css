@@ -1,0 +1,29 @@
+header{
+    color: #46c224;
+    background-image: url('https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/03/thundercats-leono-luce-salvaje-en-este-cosplay-3.jpg?resize=1280%2C720&quality=80&ssl=1');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-top{
+    color: white;
+    background-color:	#1827c9;
+    padding: 20px;
+    width: 50px;
+    height: 100px;
+}
+
+.ask-question{
+
+}
+
+.sign-in{
+    background-color: #1827c9;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    width: 50px;
+    height: 21px;
+
+}
