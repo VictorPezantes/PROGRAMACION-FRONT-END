@@ -1,0 +1,117 @@
+* {
+    font-size: 13px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.showcase {
+    background-image: url(thundercats-leono-luce-salvaje-en-este-cosplay-3.webp);
+    height: 92.5vh;
+    width: 100vw;
+}
+
+.showcase-top {
+    font-weight: bold;
+    position: absolute;
+    font-size: 9px;
+    background-color: #1827c9;
+    padding: 20px 10px 27px 10px;
+    text-align: center;
+    left: 7.5vw;
+    color: white;
+    width: 2.5vw;
+}
+
+.btn-m {
+    position: absolute;
+    background-color: #1827c9;
+    color: white;
+    right: 2.5vw;
+    top: 2.5vh;
+    padding: 5px 16px 5px 16px;
+}
+
+.showcase-content {
+    margin:0px;
+    position: absolute;
+    top: 45vh;
+    left: 37.5vw;
+    h1 {
+        color: #46c224;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+        width: 35vw;
+        
+    }
+    .email_thingy {
+        width: 25vw;
+        height: 20px;
+        
+    }
+    .btn-x1 {
+        background-color: #1827c9;
+        width: 5vw;
+        color: white;
+        height: 20px;
+        padding: 6px;
+    }
+    .texto_random {
+        color: #46c224;
+        text-align: center;
+        font-size: 14.5px;
+        font-weight: bold;
+    }
+}
+
+.ask-question {
+    position: absolute;
+    top: 92.5vh;
+    width: 100vw;
+    height: 80vh;
+    background-color: #000;
+    h1 {
+        margin-left: 37.5vw;
+        text-align: center;
+        color: #46c224;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        width: 35vw;
+    }
+    button {
+        margin-left: 37.5vw;
+        background-color: #999;
+        width: 35vw;
+        height: 35px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    .email_thingy {
+        width: 28.5vw;
+        height: 20px;
+    }
+}
+
+footer {
+    padding: 20px 20px;
+    position: absolute;
+    top: calc(92.5vh + 80vh);
+    width: 100vw;
+    background-color: #1827c9;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    .row {
+        width: auto;
+        a {
+            margin: auto;
+            padding: 0px 6vw 0px 6vw;
+            font-size: 15px;
+            color: white;
+        }
+    }
+}
