@@ -1,14 +1,19 @@
+body{
+    background-color: black;
+    margin: 0;
+}
 header{
     color: #46c224;
     background-image: url('https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/03/thundercats-leono-luce-salvaje-en-este-cosplay-3.jpg?resize=1280%2C720&quality=80&ssl=1');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    height: 700px;
 }
 
 .showcase-top{
     color: white;
-    background-color:	#1827c9;
+    background-color:	#1827c9;    
     padding: 20px;
     width: 50px;
     height: 100px;
@@ -30,6 +35,46 @@ header{
     right: 20px;
 
 }
+
+button{
+    width: 500px;
+    text-align: left;
+    background-color:#222;
+    color: white;
+    height: 40px;
+
+    
+}
+h1{
+    color:#46c224;
+    font-size: 50px;
+    
+}
 .ask-question{
     text-align: center;
+
+}
+.email{
+    text-align: center;
+}
+.membership{
+    text-align: center;
+    color: #46c224;
+}
+.page-down{
+    justify-content: space-evenly;
+    display: flex;
+    background-color:#1827c9
+}
+.lista1{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #1827c9;
 }
