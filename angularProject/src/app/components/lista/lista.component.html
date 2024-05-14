@@ -1,0 +1,23 @@
+<p>lista works!</p>
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+
+
+</ul>
+
+<ul>
+    <li *ngFor="let item of lista"><div *ngFor="let ite of item | keyvalue">
+        Key: <b>{{ite.key}}</b> and Value: <b>{{ite.value}}</b>
+    </div>Nombre: {{item.nombre}} Edad: {{item.edad}} Ciudad: {{item.ciudad}}</li>
+
+
+</ul>
+
+
+<ul>
+    <li *ngFor="let key of keys()">
+        {{key}}:{{datos[key]}}
+        </li>
+
+</ul>

@@ -1,0 +1,14 @@
+<p>switch works!</p>
+
+
+
+<section>
+
+    <article  [ngSwitch]="userType">
+        <p *ngSwitchCase="'normal'">Bienvenido usuario exclusivo</p>
+        <p *ngSwitchCase="'premium'">Bienvenido usuario premium</p>
+        <p *ngSwitchDefault>Bienvenido Registrate</p>
+
+    
+    </article>
+</section>

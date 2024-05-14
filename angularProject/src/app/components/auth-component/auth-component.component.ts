@@ -16,7 +16,7 @@ export class AuthComponentComponent {
   error:string=""
   usuario:string ="";
 contrasena:string ="";
-
+lista = []
   login(){
     if (this.usernameLocal == this.usuario && this.passLocal == this.contrasena){
   this.isLoguin = true;

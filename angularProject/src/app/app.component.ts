@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AuthComponentComponent } from './components/auth-component/auth-component.component';
+import { SwitchComponent } from './components/switch/switch.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AuthComponentComponent],
+  imports: [RouterOutlet, SwitchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
