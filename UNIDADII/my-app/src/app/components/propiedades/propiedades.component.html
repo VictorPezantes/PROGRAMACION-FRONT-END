@@ -1,0 +1,24 @@
+@if(isActive){
+    <p>welcome</p>
+  }@else{
+    <p>inicia sesion</p>
+  }
+  
+  <!-- <button (click)="isActiveOk()">{{login}}</button> -->
+
+  <section [class.active]="isActive" (click)="toggleActive()">
+    <article>
+        <p>elemento activo</p>
+    </article>
+  </section>
+
+  <a [href]="enlace">{{message}}</a>
+
+<label for="nombre">Nombre</label>
+<input id="nombre" type="text" placeholder="Ingresa tu nombre" [(ngModel)]="nombre">
+<button (click)="enviar()">enviar</button>
+  <!-- @if(){
+
+  }@else{
+
+  } -->

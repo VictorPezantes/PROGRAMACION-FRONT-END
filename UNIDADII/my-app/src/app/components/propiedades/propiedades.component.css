@@ -1,0 +1,13 @@
+.active{
+    padding: 10px ;
+    color: white;    
+    background-color: blue;
+    cursor: pointer;
+}
+
+section{
+    background-color: green ;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+}
