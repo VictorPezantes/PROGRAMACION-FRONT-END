@@ -1,0 +1,39 @@
+<h1 class="h1">Lista de Productos Electrónicos</h1>
+<button type="button" class="button btn btn-primary" (click)="alternarMostrarProductos()">Mostrar/Ocultar Productos</button>
+@if (mostrarProductos) {
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr class="table-dark">
+				<th>Nombre</th>
+				<th>Precio</th>
+				<th>Color</th>
+				<th>Tamaño</th>
+				<th>Tipo</th>
+				<th>Año de Fabricación</th>
+			</tr>
+		</thead>
+			<tbody>
+				@for (producto of productosService.obtenerProductos(); track producto) {
+					<tr class="table-light">
+						<td>{{producto.nombre}}</td>
+						<td>{{producto.precio}}</td>
+						<td>{{producto.color}}</td>
+						<td>{{producto.size}}</td>
+						@switch (producto.tipo) {
+							@case ("Electrónico") {
+								<td>{{producto.tipo}}</td>
+							}
+							@default {
+								<td>Otro</td>
+							}
+						}
+						<td>{{producto.anioFabricacion}}</td>
+					</tr>
+						}
+			</tbody>
+	</table>
+} @else {
+	<p class="alert alert-warning p" role="alert">No hay productos que mostrar</p>
+
+	
+}
