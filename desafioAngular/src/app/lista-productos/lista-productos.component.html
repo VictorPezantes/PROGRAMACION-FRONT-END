@@ -1,0 +1,37 @@
+<h1 class="text-center">Lista de Productos Electrónicos</h1>
+
+<div class="container">
+    <button (click)="alternarMostrarProductos()" class="btn btn-primary mb-3">Mostrar/Ocultar Productos</button>
+    
+    <div *ngIf="mostrarProductos; else noProductos">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Color</th>
+            <th>Tamaño</th>
+            <th>Tipo</th>
+            <th>Año de Fabricación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.precio }}</td>
+            <td>{{ producto.color }}</td>
+            <td>{{ producto.tamano }}</td>
+            <td [ngSwitch]="producto.tipo">
+              <span *ngSwitchCase="'Electrónico'">Electrónico</span>
+              <span *ngSwitchDefault>OTRO</span>
+            </td>
+            <td>{{ producto.anoFabricacion }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ng-template #noProductos>
+      <p class="alert alert-warning">No hay productos para mostrar.</p>
+    </ng-template>
+  </div>
