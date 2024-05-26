@@ -1,0 +1,35 @@
+<section>
+    <h2>Lista de Productos Electrónicos</h2>
+    <button (click)="alternarMostrarProductos()" type="button" class="btn btn-primary">Mostrar/Ocultar Productos</button>
+    @if (mostrarProductos) {
+        
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Color</th>
+                    <th>Tamaño</th>
+                    <th>Tipo</th>
+                    <th>Año Fabricación</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (producto of productos; track producto) {
+                <tr>
+                    <td>{{ producto.name }}</td>
+                    <td>{{ producto.price }}</td>
+                    <td>{{ producto.color }}</td>
+                    <td>{{ producto.size }}</td>
+                    <td>{{ producto.type }}</td>
+                    <td>{{ producto.manufacture }}</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+                
+    }@else{
+        <p class="alert alert-warning" role="alert" >No hay productos para mostrar</p>
+    }
+</section>
