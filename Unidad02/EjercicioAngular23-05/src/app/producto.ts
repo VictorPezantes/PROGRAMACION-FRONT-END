@@ -2,7 +2,7 @@ export interface Producto {
   nombre: string;
   precio: number;
   color: string;
-  tamano: string;
+  tamanio: string;
   tipo: string;
-  anoFabricacion: number;
+  anioFabricacion: number;
 }

@@ -1,11 +1,9 @@
 <p>lista-productos works!</p>
-<section class="container mt-4">
+<div class="container mt-4">
   <button class="btn btn-primary mb-3" (click)="alternarMostrarProductos()">
     MOSTRAR PRODUCTOS
   </button>
-
-
-  <section **ngIf="mostrarProductos; else noProducts">
+  <div *ngIf="mostrarProductos; else noProducts">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -18,23 +16,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr **ngFor="let producto of productos">
+        <tr *ngFor="let producto of productos">
           <td>{{ producto.nombre }}</td>
           <td>{{ producto.precio }}</td>
           <td>{{ producto.color }}</td>
-          <td>{{ producto.tamano }}</td>
-          <div [ngSwitch]="producto.tipo">
-            <span **ngSwitchCase= "'Electronico'">Electronico</span>
-            <span **ngSwitchDefault>Otro</span>
-          </div>
-          <td>{{ producto.anoFabricacion }}</td>
+          <td>{{ producto.tamanio }}</td>
+          <td [ngSwitch]="producto.tipo">
+            <span *ngSwitchCase="'Electronico'">Electronico</span>
+            <span *ngSwitchDefault>Otro</span>
+          </td>
+          <td>{{ producto.anioFabricacion }}</td>
         </tr>
       </tbody>
     </table>
-  </section>
+  </div>
   <ng-template #noProducts>
-    <article class="alert slert-info">
-      No hay productos
-    </article>
+    <div class="alert alert-info">
+      NO HAY PRODUCTOS
+    </div>
   </ng-template>
-</section>
+</div>
