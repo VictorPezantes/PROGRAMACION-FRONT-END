@@ -1,0 +1,29 @@
+
+<h1>Ejemplo de uso de local Storage</h1>
+
+<section>
+    <h2>Guardar Datos</h2>
+    <div>
+        <button (click)="guardarDatos()">Guardar Datos</button>
+    </div>
+</section>
+
+<section>
+
+    <h2>Obtener usuario</h2>
+    <button (click)="getUser()">Obtener Usuario</button>
+    <p>{{datosRecuperados}}</p>
+</section>
+
+<section>
+
+    <h2>actualizar usuario</h2>
+    <input type="text" [(ngModel)]="name" name="name">
+    <button (click)="updateUser()">Actualizar Usuario</button>
+</section>
+
+<section>
+    <h2>Eliminar Usuario</h2>
+    <button (click)="deleteUser()">Eliminar usuario</button>
+    <p>{{message}}</p>
+</section>
