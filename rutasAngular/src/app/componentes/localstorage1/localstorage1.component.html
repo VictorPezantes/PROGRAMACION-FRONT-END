@@ -1,0 +1,19 @@
+<p>localstorage1 works!</p>
+<div class="container">
+<h1>EJEMPLO DE USO DE localstorage1 EN ANGULAR</h1>
+<div class="buttons">
+    <button (click)="guardardatos()">guardar Datos</button>
+    <button (click)="obtenerDatos()">Obtener Datos</button>
+
+<h1>{{datosrecuperados}}</h1>
+
+<input type="text"
+     id="usuario"
+     name="usuario"
+     placeholder="Ingresa el usuario" required [(ngModel)]="datosrecuperados">
+
+     <button (click)="actualizarDatos()">Actualizar usuario</button>
+     <button (click)="eliminarDatos()">Eliminar Datos</button>
+</div>
+
+</div>

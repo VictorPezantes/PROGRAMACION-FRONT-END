@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <form (ngSubmit)="guardardatos()" #keyValueForm="ngForm">
+      <div class="form-group">
+        <label for="keyInput">Key</label>
+        <input type="text" class="form-control" id="keyInput" name="key" [(ngModel)]="model.key" required>
+      </div>
+      <div class="form-group">
+        <label for="valueInput">Value</label>
+        <input type="text" class="form-control" id="valueInput" name="value" [(ngModel)]="model.value" required>
+      </div>
+      <div class="btn-group mt-3" role="group">
+        <button type="button" class="btn btn-primary" (click)="edit()">Editar</button>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-danger" (click)="delete()">Eliminar</button>
+        <button type="button" class="btn btn-secondary" (click)="cancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
