@@ -13,7 +13,7 @@
 			</tr>
 		</thead>
 			<tbody>
-				@for (producto of productosService.obtenerProductos(); track producto) {
+				@for (producto of productos; track producto) {
 					<tr class="table-light">
 						<td>{{producto.nombre}}</td>
 						<td>{{producto.precio}}</td>
@@ -34,6 +34,4 @@
 	</table>
 } @else {
 	<p class="alert alert-warning p" role="alert">No hay productos que mostrar</p>
-
-	
 }

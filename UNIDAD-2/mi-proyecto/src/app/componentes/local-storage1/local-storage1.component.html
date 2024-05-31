@@ -1,0 +1,57 @@
+<section class="container">
+    <h1>Local Storage</h1>
+    <article>
+        <form action="" class="form" (click)="guardarDatos()">
+            <fieldset>
+                <legend>Ingresar Datos</legend>
+                <div class="mb-3">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control" [(ngModel)]="clave" name="clave">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Valor</label>
+                    <input type="text" class="form-control" [(ngModel)]="valor" name="valor">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Guardar</button>
+            </fieldset>
+        </form>
+
+        <form action="" class="form" (submit)="obtenerDatos()">
+            <fieldset>
+                <legend>Mostrar Datos</legend>
+                <div class="mb-3">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control" [(ngModel)]="key" name="key">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Mostrar</button>
+            </fieldset>
+            <p>{{datosRecuperados}}</p>
+        </form>
+
+        <form action="" class="form" (submit)="actualizarDatos()">
+            <fieldset>
+                <legend>Actualizar Datos</legend>
+                <div class="mb-3">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control" [(ngModel)]="nuevaClave" name="nuevaClave">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Valor</label>
+                    <input type="text" class="form-control" [(ngModel)]="nuevoValor" name="nuevoValor">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Actualizar</button>
+            </fieldset>
+        </form>
+
+        <form action="" class="form" (submit)="eliminarDatos()">
+            <fieldset>
+                <legend>Eliminar Datos</legend>
+                <div class="mb-3">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control" [(ngModel)]="keyEliminar" name="keyEliminar">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Eliminar</button>
+            </fieldset>
+        </form>
+    </article>
+</section>

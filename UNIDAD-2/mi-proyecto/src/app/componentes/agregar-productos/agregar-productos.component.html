@@ -1,0 +1,30 @@
+<form (submit)="servicioProductos.agregarProductos(producto)" class="form">
+    <fieldset class="row g-3 fieldset">
+        <legend>Ingrese Datos del Producto</legend>
+        <div class="col-auto">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre">
+        </div>
+        <div class="col-auto">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" [(ngModel)]="precio" name="precio">
+        </div>
+        <div class="col-auto">
+            <label for="color" class="form-label">Color</label>
+            <input type="text" class="form-control" [(ngModel)]="color" name="color">
+        </div>
+        <div class="col-auto">
+            <label for="size" class="form-label">Tamaño</label>
+            <input type="text" class="form-control" [(ngModel)]="size" name="size">
+        </div>
+        <div class="col-auto">
+            <label for="tipo" class="form-label">Tipo</label>
+            <input type="text" class="form-control" [(ngModel)]="tipo" name="tipo">
+        </div>
+        <div class="col-auto">
+            <label for="anioFabricacion" class="form-label">Año de Fabricación</label>
+            <input type="number" class="form-control" [(ngModel)]="anioFabricacion" name="anioFabricacion">
+        </div>
+    </fieldset>
+    <button type="submit" class="button btn btn-primary">Agregar Producto</button>
+</form>

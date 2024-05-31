@@ -96,9 +96,9 @@ export class ServicioPorductosService {
     return this.productos
   }
 
-  // añadirProductos(producto: Producto){
-  //   this.productos.
-  // }
+  agregarProductos(producto: Producto){
+    this.productos.push(producto)
+  }
 }
 
 
