@@ -1,1 +1,67 @@
-<p>localstorage2 works!</p>
+<section>
+    <article>
+        <h2>Agregar Usuario</h2>
+        <div class="row modelo">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Key" aria-label="setUserKey" [(ngModel)]="setUserKey" name="setUserKey">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Value" aria-label="userValue" [(ngModel)]="setUserValue" name="setUserValue">
+            </div>
+            <button class="btn btn-primary" (click)="createUser()">Guardar</button>
+            @if(addMessage !== ""){
+              <p class="alert alert-success" role="alert">{{addMessage}}</p>
+            }
+        </div>
+    </article>
+    
+    <article>
+        <h2>Recuperar Usuario</h2>
+        <div class="row modelo">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Key" aria-label="First name" [(ngModel)]="userKey" name="userKey">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="getUser()">Guardar</button>
+            @if(getData){
+                <p class="alert alert-info" role="alert">Clave: {{getData}}</p>
+            }
+  
+            @if(getMessage!== ""){
+              <p class="alert alert-danger" role="alert">{{getMessage}}</p>
+            }
+        </div>
+    </article>
+    
+    <article>
+        <h2>Eliminar Usuario</h2>
+        <div class="row modelo">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Key" aria-label="First name" [(ngModel)]="deleteUserKey" name="deleteUserKey">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="deleteUser()">Guardar</button>
+            @if(deleteMessage !== ""){
+                <p class="alert alert-success" role="alert">{{deleteMessage}}</p>}
+            <!-- }@else{
+              <p class="alert alert-danger" role="alert">{{deleteMessage}}</p>
+            } -->
+        </div>
+    </article>
+    
+    <article>
+        <h2>Actualizar Usuario</h2>
+        <div class="row modelo">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Key" aria-label="First name" [(ngModel)]="updateUserKey" name="updateUserKey">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="User Value" aria-label="Last name" [(ngModel)]="updateUserValue" name="updateUserValue">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="updateUser()">Guardar</button>
+        </div>
+        @if(updateMessage !== ""){
+          <p class="alert alert-success" role="alert">{{updateMessage}}</p>
+        }
+    </article>
+
+</section>
+

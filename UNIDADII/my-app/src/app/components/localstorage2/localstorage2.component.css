@@ -1,0 +1,27 @@
+section{
+    display: flex;
+    
+
+}
+
+article{
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modelo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 100px
+}
