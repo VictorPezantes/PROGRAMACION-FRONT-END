@@ -28,5 +28,6 @@ export default class HomeComponent {
         console.log(this.apiInfo)
       }
     )
+
   }
 }

@@ -1,1 +1,40 @@
-<p>nosotros works!</p>
+<section>
+    <h1>Lista de productos</h1>
+    <div class="header-products-div">
+        <div class="filter">
+            <label for="customRange1" class="form-label">Price from: </label>
+            <input type="range" class="form-range" id="customRange1" min="0" max="1000" [(ngModel)]="price" name="price" id="price" (input)="searchProducts()">
+            <p>{{price}}</p>
+        </div>
+        <div class="search">
+            <label for="busqueda" class="fs-4">Buscar</label>
+            <input type="text" [(ngModel)]="search" name="search" id="busqueda" (input)="searchProducts()" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of filteredProducts; track item){
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td class="price">{{item.price}} </td>
+                <td><img src={{item.image}} alt="img" ></td>
+            </tr>
+        }
+        </tbody>
+
+        @if(filteredProducts.length === 0){
+            <p class="alert alert-danger" role="alert">Not found</p>
+        }
+
+
+    </table>
+</section>
