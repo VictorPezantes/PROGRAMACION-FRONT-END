@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApirestService } from '../../../servicio/api/apirest.service';
+import { Personaje } from '../../../../../types';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,24 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export default class HomeComponent {
 
+  apiInfo : Personaje[] = []
+  callApi= false
+  
+  constructor(private apiService: ApirestService){}
+
+  ngOnInit():void{
+    this.getDataApiService()
+  }
+
+  getDataApiService(){
+    this.callApi= !this.callApi
+    this.apiService.getDataApi().subscribe(
+      data => {
+        this.apiInfo = data
+        console.log(this.apiInfo)
+      }
+    )
+  }
 }

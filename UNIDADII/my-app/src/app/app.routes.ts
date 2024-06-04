@@ -2,13 +2,13 @@ import { Routes } from '@angular/router';
 // import { Localstorage1Component } from './components/localstorage1/localstorage1.component';
 // import { Localstorage2Component } from './components/localstorage2/localstorage2.component';
 import { ContactoComponent } from './components/shared/contacto/contacto.component';
-import { HomeComponent } from './components/shared/home/home.component';
+// import { HomeComponent } from './components/shared/home  /home.component';
 import { NosotrosComponent } from './components/shared/nosotros/nosotros.component';
 
 export const routes: Routes = [
     {path:"localstorage1", loadComponent:()=>import("./components/localstorage1/localstorage1.component")},
     {path:"localstorage2", loadComponent:()=>import("./components/localstorage2/localstorage2.component")},
-    {path: "home", component: HomeComponent},
+    {path: "home",title:"home", loadComponent: ()=>import("./components/shared/home/home.component")},
     {path:"contacto", component: ContactoComponent},
     {path:"nosotros", component: NosotrosComponent},
     {path:"servicios",
