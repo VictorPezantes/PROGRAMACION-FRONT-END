@@ -1,0 +1,38 @@
+<p>home works!</p>
+<h1 class="h1">Lista de Api</h1>
+<button type="button" class="button btn btn-primary" (click)="recibirDatosApi()">Obtener Informacion</button>
+
+	
+			<table class="table table-bordered table-striped">
+		<thead>
+			<tr class="table-dark">
+				<th>Id</th>
+				<th>Imagen</th>
+				<th>Nombre</th>
+				<th>Especies</th>
+				<th>genero</th>
+				<th>Estado</th>
+				<th>Tipo</th>
+				<th>Episodios</th>
+
+
+			</tr>
+		</thead>
+			<tbody>			
+
+@for (producto of informacionApi; track producto) {
+					
+										
+						
+	<tr class="table-light">
+						<td>{{producto.id}}</td>
+						<td><img src="{{producto.image}}" alt="Girl in a jacket" width="50" height="50"></td>
+						<td>{{producto.name}}</td>
+						<td>{{producto.species}}</td>
+                        <td>{{producto.gender}}</td>
+                        <td>{{producto.status}}</td>
+                        <td>{{producto.type}}</td>
+                        <td>{{producto.episode.length}}</td>
+					</tr>
+                }</tbody>
+	</table>
