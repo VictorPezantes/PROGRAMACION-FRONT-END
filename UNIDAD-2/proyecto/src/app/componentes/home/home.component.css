@@ -1,0 +1,14 @@
+.table {
+    margin-top: 10px;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    min-width: 100px;
+    max-width: 400px;
+    text-align: center;
+    overflow: scroll;
+}

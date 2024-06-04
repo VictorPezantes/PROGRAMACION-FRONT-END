@@ -1,0 +1,37 @@
+<button class="btn btn-primary" (click)="alternarMostrarData()">Mostrar Data</button>
+@if (mostrarData) {
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr class="table-dark tr">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Species</th>
+                <th>Type</th>
+                <th>Gender</th>
+                <th>Origin</th>
+                <th>Image</th>
+                <th>Episode</th>
+                <th>Url</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of informacionApi; track item) {
+                <tr class="table-light">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.status}}</td>
+                    <td>{{item.species}}</td>
+                    <td>{{item.type}}</td>
+                    <td>{{item.gender}}</td>
+                    <td>{{item.origin.name}} <br> {{item.origin.url}}</td>
+                    <td><img src={{item.image}} alt="Imagen del personaje"></td>
+                    <td>{{item.episode}}</td>
+                    <td>{{item.url}}</td>
+                    <td>{{item.created}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
