@@ -1,0 +1,12 @@
+div{
+    display: flex;
+    gap: 5px;
+}
+
+table{
+    margin-top: 15px;
+}
+
+.button-create{
+    margin-top: 10px;
+}

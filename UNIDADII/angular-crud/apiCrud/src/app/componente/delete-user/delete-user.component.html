@@ -1,0 +1,27 @@
+@if(showDeleteUser){
+  <form action="" method="post"  >
+      <h2>Delete Employee</h2>
+      
+      <button type="button" class="btn btn-danger" routerLink="lista-empleado" (click)="hideDeleteUser()">Cancel</button>
+      <div class="mb-3">
+          <label for="first-name" class="form-label">ID</label>
+          <input type="text" class="form-control" id="first-name" placeholder="Example: 1" [(ngModel)]="id" name="id">
+        </div>
+        <button type="button" class="btn btn-success" (click)="validateId()" >Submit</button>
+        @if(message){
+          <p class="alert alert-danger" role="alert">{{message}}</p>
+        }
+        @if(successMessage){
+          <p class="alert alert-success" role="alert">{{successMessage}}</p>
+        }
+    </form>
+    @if(messageBoolean){
+      <section class="alert alert-warning section-alert" role="alert">
+         <p>{{messageWarning}}</p> 
+         <button type="button" class="btn btn-info" (click)="hideDeleteUser()" routerLink="lista-empleado" >Cancel</button>
+         <button type="button" class="btn btn-danger" (click)="successfulDelete()">Delete</button>
+      </section>
+  }
+    
+  
+}

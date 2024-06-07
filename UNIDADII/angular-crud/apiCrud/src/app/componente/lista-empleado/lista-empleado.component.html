@@ -1,0 +1,43 @@
+<router-outlet></router-outlet>
+
+@if(showList){
+    <h1>Employee List</h1>
+    <button type="button" class="btn btn-success button-create" routerLink="create-user" (click)="hideList()">New Employee</button>
+    <table class="table table-striped table-bordered">
+    
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of dataApi; track item){
+                <tr>
+                    <td>{{item.first_name}}</td>
+                    <td>{{item.last_name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>
+                        <div>
+
+                            <button type="button" class="btn btn-info" routerLink="update-user" (click)="hideList()">Update</button>
+                            <button type="button" class="btn btn-danger" routerLink="delete-user" (click)="hideList()">Delete</button>
+                            <button type="button" class="btn btn-warning" >View</button>
+                        </div>
+                    </td>
+    
+                </tr>
+            
+            }
+    
+        </tbody>
+    
+    
+    </table>
+
+}
+
+
+

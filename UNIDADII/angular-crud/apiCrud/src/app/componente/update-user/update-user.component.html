@@ -1,0 +1,26 @@
+
+@if(formUpdateUser){
+
+  <form action="" method="post">
+    <h2>Update Employee</h2>
+    
+    <button type="button" class="btn btn-danger" (click)="hideUpdateForm()" routerLink="lista-empleados" >Cancel</button>
+    <div class="mb-3">
+        <label for="first-name" class="form-label">ID</label>
+        <input type="text" class="form-control" id="first-name" placeholder="Example: 1" [(ngModel)]="id" name="id">
+      </div>
+      <div class="mb-3">
+        <label for="last-name" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="last-name" placeholder="Martinez ..." [(ngModel)]="firstName" name="firstName">
+      </div>
+      <button type="button" class="btn btn-success" (click)="validateInput()">Submit</button>
+      @if(message){
+        <p class="alert alert-danger" role="alert">{{message}}</p>
+      }
+
+      @if(successMessage){
+        <p class="alert alert-success" role="alert">{{successMessage}}</p>
+      }
+  </form>
+
+}
