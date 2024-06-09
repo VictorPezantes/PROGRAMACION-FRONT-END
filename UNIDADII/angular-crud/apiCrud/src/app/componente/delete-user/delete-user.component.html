@@ -1,4 +1,4 @@
-@if(showDeleteUser){
+
   <form action="" method="post"  >
       <h2>Delete Employee</h2>
       
@@ -18,10 +18,10 @@
     @if(messageBoolean){
       <section class="alert alert-warning section-alert" role="alert">
          <p>{{messageWarning}}</p> 
-         <button type="button" class="btn btn-info" (click)="hideDeleteUser()" routerLink="lista-empleado" >Cancel</button>
+         <button type="button" class="btn btn-info" (click)="navigateBack()" >Cancel</button>
          <button type="button" class="btn btn-danger" (click)="successfulDelete()">Delete</button>
       </section>
   }
     
   
-}
+

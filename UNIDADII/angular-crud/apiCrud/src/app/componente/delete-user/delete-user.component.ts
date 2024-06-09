@@ -42,10 +42,6 @@ export default class DeleteUserComponent {
     this.message = '';
   }
 
-  hideDeleteUser() {
-    this.showDeleteUser = !this.showDeleteUser;
-  }
-
   validateId() {
     this.successMessage = '';
     if (this.id.length === 0) {

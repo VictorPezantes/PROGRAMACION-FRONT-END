@@ -12,7 +12,10 @@ import { Router } from '@angular/router';
   styleUrl: './update-user.component.css',
 })
 export default class UpdateUserComponent {
-  constructor(public listEmployee: ListaEmpleadoComponent,public router: Router) {}
+  constructor(
+    public listEmployee: ListaEmpleadoComponent,
+    public router: Router
+  ) {}
 
   formUpdateUser = true;
   id = '';
@@ -33,7 +36,7 @@ export default class UpdateUserComponent {
 
   hideUpdateForm() {
     this.formUpdateUser = !this.formUpdateUser;
-    this.navigateBack()
+    this.navigateBack();
   }
 
   validateUser() {

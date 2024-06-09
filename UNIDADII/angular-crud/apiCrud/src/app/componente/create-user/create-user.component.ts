@@ -13,17 +13,11 @@ import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
 export default class CreateUserComponent {
   constructor(public listEmployee: ListaEmpleadoComponent, private router:Router) {}
 
-  formCreateUser = true;
-
   firstName = '';
   lastName = '';
   message = '';
   successMessage = '';
   numberList = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-  hideCreateUser() {
-    this.formCreateUser = !this.formCreateUser;
-  }
 
   navigateBack() {
     this.router.navigate(['/lista-empleado']);
