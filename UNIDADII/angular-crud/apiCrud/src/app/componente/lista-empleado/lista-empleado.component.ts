@@ -3,6 +3,7 @@ import { EmpleadoService } from '../../servicio/empleado.service';
 import { ActivatedRoute, NavigationEnd, RouterLink, RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { filter } from 'rxjs/operators'
+import { EmpleadoInterface } from '../../modelo/types';
 
 @Component({
   selector: 'app-lista-empleado',
@@ -12,7 +13,7 @@ import { filter } from 'rxjs/operators'
   styleUrl: './lista-empleado.component.css',
 })
 export default class ListaEmpleadoComponent implements OnInit {
-  dataApi: any[]= [];
+  dataApi: EmpleadoInterface[]= [];
   showList=true
 
   constructor(private serviceEmployee: EmpleadoService, private router: Router, private route: ActivatedRoute) {}
@@ -30,9 +31,8 @@ export default class ListaEmpleadoComponent implements OnInit {
   }
 
   getUser() {
-    this.serviceEmployee.getDataApi().subscribe((data) => {
-      this.dataApi = data.data;
-      console.log("esta es mi data api",this.dataApi);
+    this.serviceEmployee.getDataApi().subscribe((infoApi) => {
+      this.dataApi = infoApi.data     
     });
   }
 
