@@ -4,7 +4,7 @@
   <form action="https://reqres.in/api/login" method="post">
       <h2>Create Employee</h2>
       
-      <button type="button" class="btn btn-danger" (click)="hideCreateUser()" routerLink="lista-empleados">Cancel</button>
+      <button type="button" class="btn btn-danger" (click)="navigateBack()">Cancel</button>
       <div class="mb-3">
           <label for="first-name" class="form-label">First Name</label>
           <input type="text" class="form-control" id="first-name" placeholder="Raul ..." [(ngModel)]="firstName" name="firstName" (input)="validateUser()">

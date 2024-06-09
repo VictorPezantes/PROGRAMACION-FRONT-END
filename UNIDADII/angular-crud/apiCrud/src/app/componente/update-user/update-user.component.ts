@@ -27,13 +27,13 @@ export default class UpdateUserComponent {
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
   ];
 
-  // navigateBack() {
-  //   this.router.navigate(['/lista-empleado']);
-  // }
+  navigateBack() {
+    this.router.navigate(['/lista-empleado']);
+  }
 
   hideUpdateForm() {
     this.formUpdateUser = !this.formUpdateUser;
-    this.listEmployee.hideList();
+    this.navigateBack()
   }
 
   validateUser() {
@@ -86,7 +86,7 @@ export default class UpdateUserComponent {
       return;
     }
 
-    this.successMessage = 'Se ha creado exitosamente';
+    this.successMessage = 'Se ha modificado exitosamente';
     this.firstName = '';
     this.id = '';
     this.message = '';

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-delete-user',
@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './delete-user.component.css',
 })
 export default class DeleteUserComponent {
-  constructor(public listEmployee: ListaEmpleadoComponent) {}
+  constructor(public listEmployee: ListaEmpleadoComponent, private router: Router) {}
 
   showDeleteUser = true;
 
@@ -25,6 +25,10 @@ export default class DeleteUserComponent {
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
   ];
 
+
+  navigateBack() {
+    this.router.navigate(['/lista-empleado']);
+  }
 
   warningMessage() {
     this.messageBoolean = true;
@@ -40,7 +44,6 @@ export default class DeleteUserComponent {
 
   hideDeleteUser() {
     this.showDeleteUser = !this.showDeleteUser;
-    this.listEmployee.hideList();
   }
 
   validateId() {

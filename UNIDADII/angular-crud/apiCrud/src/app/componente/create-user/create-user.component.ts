@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
 
 @Component({
@@ -11,7 +11,7 @@ import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
   styleUrl: './create-user.component.css',
 })
 export default class CreateUserComponent {
-  constructor(public listEmployee: ListaEmpleadoComponent) {}
+  constructor(public listEmployee: ListaEmpleadoComponent, private router:Router) {}
 
   formCreateUser = true;
 
@@ -23,7 +23,10 @@ export default class CreateUserComponent {
 
   hideCreateUser() {
     this.formCreateUser = !this.formCreateUser;
-    this.listEmployee.hideList();
+  }
+
+  navigateBack() {
+    this.router.navigate(['/lista-empleado']);
   }
 
   validateUser() {

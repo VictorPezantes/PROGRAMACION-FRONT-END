@@ -1,10 +1,10 @@
 
-@if(formUpdateUser){
+<!-- @if(formUpdateUser){ -->
 
   <form action="" method="post">
     <h2>Update Employee</h2>
     
-    <button type="button" class="btn btn-danger" (click)="hideUpdateForm()" routerLink="lista-empleados" >Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="navigateBack()">Cancel</button>
     <div class="mb-3">
         <label for="first-name" class="form-label">ID</label>
         <input type="text" class="form-control" id="first-name" placeholder="Example: 1" [(ngModel)]="id" name="id">
@@ -23,4 +23,4 @@
       }
   </form>
 
-}
+<!-- } -->

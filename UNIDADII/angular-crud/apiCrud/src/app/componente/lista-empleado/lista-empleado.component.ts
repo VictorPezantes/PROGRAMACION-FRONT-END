@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { EmpleadoService } from '../../servicio/empleado.service';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, RouterLink, RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
+import { filter } from 'rxjs/operators'
 
 @Component({
   selector: 'app-lista-empleado',
@@ -14,16 +15,20 @@ export default class ListaEmpleadoComponent implements OnInit {
   dataApi: any[]= [];
   showList=true
 
-  constructor(private serviceEmployee: EmpleadoService, private router: Router) {}
+  constructor(private serviceEmployee: EmpleadoService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.getUser()
+    this.getUser();
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.updateShowList();
+    });
+  }
+  updateShowList() {
+    this.showList = this.route.snapshot.firstChild === null;
   }
 
-  hideList(){
-    this.showList=!this.showList
-
-  }
   getUser() {
     this.serviceEmployee.getDataApi().subscribe((data) => {
       this.dataApi = data.data;
@@ -32,10 +37,14 @@ export default class ListaEmpleadoComponent implements OnInit {
   }
 
   navigateToCreateUser() {
-    this.router.navigate(['/create-user']);
+    this.router.navigate(['lista-empleados/create-user']);
   }
 
   navigateToUpdateUser() {
-    this.router.navigate(['update-user']);
+    this.router.navigate(['lista-empleados/update-user']);
+  }
+
+  navigateToDeleteUser() {
+    this.router.navigate(['lista-empleados/delete-user']);
   }
 }
