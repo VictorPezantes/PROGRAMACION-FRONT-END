@@ -11,11 +11,14 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './delete-user.component.css',
 })
 export default class DeleteUserComponent {
-  constructor(public listEmployee: ListaEmpleadoComponent, private router: Router) {}
+  constructor(
+    public listEmployee: ListaEmpleadoComponent,
+    private router: Router
+  ) {}
 
   showDeleteUser = true;
 
-  id = '';
+  id: number | undefined;
   messageBoolean = false;
   message = '';
   successMessage = '';
@@ -25,42 +28,35 @@ export default class DeleteUserComponent {
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
   ];
 
-
   navigateBack() {
     this.router.navigate(['/lista-empleado']);
   }
 
   warningMessage() {
     this.messageBoolean = true;
-    this.messageWarning = '¿Estas seguro que deseas eliminar este usuario?';
+    this.messageWarning = '¿Estás seguro que deseas eliminar este usuario?';
   }
 
   successfulDelete() {
     this.messageBoolean = false;
     this.successMessage = 'Se ha eliminado exitosamente';
-    this.id = '';
+    this.id = undefined;
     this.message = '';
   }
 
   validateId() {
     this.successMessage = '';
-    if (this.id.length === 0) {
+    if (this.id === undefined) {
       this.message = 'Los campos no pueden estar vacios';
       return;
     }
 
-    if (this.id.length > 5) {
-      this.message = 'El campo ID no puede contener mas de 5 numeros';
-      return;
-    }
-
-    const validateId = this.id.split('');
-
-    const resultValidateId = validateId.some((element) =>
-      this.letterList.includes(element)
+    const employeeId = this.listEmployee.dataApi.find(
+      (emp) => emp.id === this.id
     );
-    if (resultValidateId) {
-      this.message = 'El campo ID no puede contener letras';
+
+    if (!employeeId) {
+      this.message = 'No se encontró al empleado';
       return;
     }
 

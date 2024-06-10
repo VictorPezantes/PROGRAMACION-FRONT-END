@@ -3,7 +3,7 @@ form{
     flex-direction: column;
     gap: 15px;
     width: 500px;
-    height: 380px;
+    min-height: 380px;
     position: absolute;
     right: 35%;
     top: 25%;
@@ -15,4 +15,8 @@ form{
 
 label{
     font-weight: bold;
+}
+
+.message{
+    margin-top: 10px;
 }

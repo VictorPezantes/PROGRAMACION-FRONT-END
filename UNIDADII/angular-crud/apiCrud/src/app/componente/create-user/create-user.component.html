@@ -13,9 +13,9 @@
         <button type="button" class="btn btn-success" (click)="validateInput()">Submit</button>
 
       @if(message){
-        <p class="alert alert-danger" role="alert">{{message}}</p>
+        <p class="alert alert-danger message" role="alert">{{message}}</p>
       }
       @if(successMessage.length > 0){
-        <p class="alert alert-success" role="alert">{{successMessage}}</p>
+        <p class="alert alert-success message" role="alert">{{successMessage}}</p>
       }
   </form>

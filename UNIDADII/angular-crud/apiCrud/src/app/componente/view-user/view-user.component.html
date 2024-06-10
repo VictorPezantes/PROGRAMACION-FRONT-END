@@ -1,0 +1,48 @@
+<section>
+    <h2>Find Employee</h2>
+      
+    <button type="button" class="btn btn-danger" (click)="navigateBack()">Cancel</button>
+    <form action="">
+        <div class="mb-3">
+            <label for="ud" class="form-label">ID</label>
+            <input type="number" class="form-control" id="id" placeholder="Example : 1" [(ngModel)]="id" name="id">
+        </div>
+        <button type="button" class="btn btn-success" (click)="validateUser()">Submit</button>
+    </form>
+
+    @if(message){
+        <p class="alert alert-danger message" role="alert">{{message}}</p>
+    }
+
+</section>
+    
+
+    @if(userApi){
+        
+        <table class="table table-striped table-bordered">
+    
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email id</th>
+                    <th>Avatar</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td>{{userApi.first_name}}</td>
+                        <td>{{userApi.last_name}}</td>
+                        <td>{{userApi.email}}</td>
+                       <td><img src={{userApi.avatar}} alt="user"></td> 
+        
+                     </tr>
+            
+        
+            </tbody>
+            
+        
+        </table> 
+    
+    } 

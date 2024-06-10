@@ -2,6 +2,7 @@
 @if(showList){
     <h1>Employee List</h1>
     <button type="button" class="btn btn-success button-create" (click)="navigateToCreateUser()">New Employee</button>
+    <app-filter [employees]="dataApi" (filter)="handleFilteredEmployees($event)"></app-filter>
     <table class="table table-striped table-bordered">
     
         <thead>
@@ -13,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            @for(item of dataApi; track item){
+            @for(item of filteredEmployees; track item){
                 <tr>
                     <td>{{item.first_name}}</td>
                     <td>{{item.last_name}}</td>
@@ -21,9 +22,9 @@
                     <td>
                         <div>
 
-                            <button type="button" class="btn btn-info" (click)="navigateToUpdateUser()">Update</button>
+                            <button type="button" class="btn btn-info" (click)="navigateToUpdateUser()" >Update</button>
                             <button type="button" class="btn btn-danger" (click)="navigateToDeleteUser()">Delete</button>
-                            <button type="button" class="btn btn-warning" >View</button>
+                            <button type="button" class="btn btn-warning" (click)="navigateToViewUser()">View</button>
                         </div>
                     </td>
     

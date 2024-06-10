@@ -10,3 +10,10 @@ table{
 .button-create{
     margin-top: 10px;
 }
+
+div{
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    width: 300px;
+}

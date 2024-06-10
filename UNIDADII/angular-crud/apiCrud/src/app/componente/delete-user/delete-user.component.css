@@ -2,12 +2,12 @@
     width: 500px;
     position: absolute;
     right: 35%;
-    top: 65%;
+    top: 70%;
 }
 
 form{
     width: 500px;
-    height: 260px;
+    min-height: 260px;
     position: absolute;
     right: 35%;
     top: 25%;
@@ -19,4 +19,8 @@ form{
 
 label{
     font-weight: bold;
+}
+
+.message{
+    margin-top: 10px;
 }

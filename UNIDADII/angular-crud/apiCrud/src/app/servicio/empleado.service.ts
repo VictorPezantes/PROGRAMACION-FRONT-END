@@ -1,22 +1,44 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 
-import { ResponseInterface } from '../modelo/types';
+import { ID, ResponseInterface, RootObject } from '../modelo/types';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmpleadoService {
+  constructor(private http: HttpClient) {}
 
-  constructor( private http: HttpClient) { }
+  private apiGetData = 'https://reqres.in/api/users';
 
-  private api = "https://reqres.in/api/users"
+  public getDataApi(): Observable<ResponseInterface> {
+    return this.http.get<ResponseInterface>(this.apiGetData);
+  }
 
-  public getDataApi ():Observable<ResponseInterface>{
-    return this.http.get<ResponseInterface>(this.api)
-
+  public getDataById(id: ID): Observable<RootObject> {
+    const apiUserById = `https://reqres.in/api/users/${id}`;
+    return this.http
+      .get<RootObject>(apiUserById)
+      .pipe(catchError(this.handleError));
   }
 
   
+
+  private handleError(error: any): Observable<never> {
+    let errorMessage = '';
+    if (error instanceof HttpErrorResponse) {
+      if (error.status === 404) {
+        errorMessage = "No se encontró el empleado";
+      } else if (error.status === 401) {
+        errorMessage = "No autorizado";
+      } else if (error.status === 500) {
+        errorMessage = "Error interno del servidor";
+      } else {
+        errorMessage = `Error ${error.status}: ${error.message}`;
+      }
+    }
+
+    return throwError(errorMessage);
+  }
 }

@@ -1,0 +1,8 @@
+<div class="mb-3">
+    <label for="search" class="form-label">Buscar: </label>
+    <input type="text" class="form-control" id="search" placeholder="Peter..." [(ngModel)]="name" name="name" (input)="search()">
+</div>
+
+@if(message){
+    <p class="alert alert-danger" role="alert">{{message}}</p>
+}

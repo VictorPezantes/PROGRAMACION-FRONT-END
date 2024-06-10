@@ -11,7 +11,10 @@ import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
   styleUrl: './create-user.component.css',
 })
 export default class CreateUserComponent {
-  constructor(public listEmployee: ListaEmpleadoComponent, private router:Router) {}
+  constructor(
+    public listEmployee: ListaEmpleadoComponent,
+    private router: Router
+  ) {}
 
   firstName = '';
   lastName = '';

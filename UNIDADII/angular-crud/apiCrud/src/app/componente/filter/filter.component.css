@@ -1,0 +1,10 @@
+div{
+    margin-top: 10px;
+    display: flex;
+    font-size: 20px;
+    width: 300px;
+}
+p{
+    width: 500px;
+    margin-left: 15px;
+}

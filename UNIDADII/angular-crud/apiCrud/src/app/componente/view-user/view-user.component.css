@@ -1,0 +1,18 @@
+section{
+    width: 250px;
+    min-height: 300px;
+    margin: 50px;
+    border: 1px solid rgb(144, 153, 144);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table{
+    width: 900px;
+    margin-left: 20px;
+
+}
+
+.message{
+    margin-top: 10px;
+}

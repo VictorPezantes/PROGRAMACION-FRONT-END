@@ -24,6 +24,12 @@ export const routes: Routes = [
         title: 'lista-empleados | delete-user',
         loadComponent: () =>
           import('./componente/delete-user/delete-user.component'),
+      },
+      {
+        path: 'view-user',
+        title: 'lista-empleados | view-user',
+        loadComponent: () =>
+          import('./componente/view-user/view-user.component'),
       }
     ],
   },

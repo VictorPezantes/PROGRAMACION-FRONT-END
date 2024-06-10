@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import ListaEmpleadoComponent from '../lista-empleado/lista-empleado.component';
-import { RouterLink } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-update-user',
   standalone: true,
-  imports: [FormsModule, RouterLink],
+  imports: [FormsModule],
   templateUrl: './update-user.component.html',
   styleUrl: './update-user.component.css',
 })
@@ -17,8 +16,7 @@ export default class UpdateUserComponent {
     public router: Router
   ) {}
 
-  formUpdateUser = true;
-  id = '';
+  id: number | undefined;
 
   firstName = '';
 
@@ -34,22 +32,25 @@ export default class UpdateUserComponent {
     this.router.navigate(['/lista-empleado']);
   }
 
-  hideUpdateForm() {
-    this.formUpdateUser = !this.formUpdateUser;
-    this.navigateBack();
-  }
-
-  validateUser() {
-    if (this.firstName.length >= 12) {
-      this.message = 'El campo nombre no puede ser mayor a 12 caracteres';
-    } else {
-      this.message = '';
-    }
-  }
-
   validateInput() {
     this.successMessage = '';
-    if (this.firstName.length === 0 || this.id.length === 0) {
+
+
+    if (this.id === undefined) {
+      this.message = 'El campo ID no puede estar vacío';
+      return;
+    }
+
+    const employee = this.listEmployee.dataApi.find(
+      (employee) => employee.id === this.id
+    );
+
+    if (!employee) {
+      this.message = 'Empleado no encontrado';
+      return;
+    }
+
+    if (this.firstName.length === 0) {
       this.message = 'Los campos no pueden estar vacios';
       return;
     }
@@ -63,26 +64,11 @@ export default class UpdateUserComponent {
       return;
     }
 
-    if (this.id.length > 5) {
-      this.message = 'El campo ID no puede contener mas de 5 numeros';
-      return;
-    }
-
     const validateFirstName = this.firstName.split('');
-    const validateId = this.id.split('');
 
     const numberInFirstName = validateFirstName.some((element) =>
       this.numberList.includes(element)
     );
-
-    const letterInFirstName = validateId.some((element) =>
-      this.letterList.includes(element)
-    );
-
-    if (letterInFirstName) {
-      this.message = 'El campo Id no puede contener letras';
-      return;
-    }
 
     if (numberInFirstName) {
       this.message = 'Los campos no pueden contener numeros';
@@ -91,7 +77,7 @@ export default class UpdateUserComponent {
 
     this.successMessage = 'Se ha modificado exitosamente';
     this.firstName = '';
-    this.id = '';
+    this.id = undefined;
     this.message = '';
   }
 }
