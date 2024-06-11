@@ -1,0 +1,9 @@
+.h1 {
+    text-align: center;
+}
+
+.table {
+    margin: auto;
+    text-align: center;
+    max-width: 60em;
+}
